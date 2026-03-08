@@ -1,0 +1,239 @@
+
+
+
+body {
+	width: 340px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	padding: 24px;
+	background: #181a1b;
+	color: #f3f6fa;
+}
+
+
+.container {
+	background: #23272f;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(44, 62, 80, 0.22);
+	padding: 24px 18px;
+	margin-bottom: 18px;
+	animation: fadeIn 0.7s cubic-bezier(.42,0,.58,1);
+}
+
+
+h2 {
+	color: #38b6ff;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+.section {
+	margin-bottom: 22px;
+}
+.section:last-child {
+	margin-bottom: 0;
+}
+.label {
+	font-size: 1.08em;
+	font-weight: 600;
+	color: #0f1010;
+	margin-bottom: 6px;
+}
+.value {
+	font-size: 1.1em;
+	color: #f3f6fa;
+	background: #23272f;
+	border-radius: 6px;
+	padding: 8px 12px;
+	margin-bottom: 8px;
+	box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+}
+.list {
+	max-height: 120px;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.list li {
+	background: #23272f;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 1em;
+	color: #f3f6fa;
+	transition: background 0.3s, transform 0.3s;
+	box-shadow: 0 1px 4px rgba(44, 62, 80, 0.12);
+}
+.list li:hover {
+	background: #38b6ff;
+	color: #fff;
+	transform: scale(1.03);
+}
+
+.info-block {
+	margin-bottom: 18px;
+	padding: 12px 0 0 0;
+	border-bottom: 1px solid #e9ecef;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+.info-block:last-child {
+	border-bottom: none;
+}
+
+.icon {
+	font-size: 1.3em;
+	margin-right: 6px;
+	filter: drop-shadow(0 1px 2px #38b6ff);
+}
+
+ul {
+	max-height: 120px;
+	overflow: auto;
+	padding: 0;
+	margin: 8px 0 0 0;
+	list-style: none;
+}
+
+li {
+	background: linear-gradient(90deg, #e9ecef 0%, #f6f8fa 100%);
+	margin-bottom: 8px;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 1em;
+	transition: background 0.3s, transform 0.3s;
+	box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+}
+
+li:hover {
+	background: linear-gradient(90deg, #38b6ff 0%, #4f8cff 100%);
+	color: #fff;
+	transform: scale(1.03);
+}
+
+
+button, input[type="button"] {
+	background: #23272f;
+	color: #38b6ff;
+	border: 1px solid #38b6ff;
+	border-radius: 8px;
+	padding: 8px 16px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+	transition: background 0.2s, box-shadow 0.2s, transform 0.2s, color 0.2s;
+}
+button:hover, input[type="button"]:hover {
+	background: #38b6ff;
+	color: #fff;
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+	transform: scale(1.05);
+}
+
+
+input[type="text"], input[type="search"] {
+	border: 1px solid #23272f;
+	border-radius: 8px;
+	padding: 8px 12px;
+	font-size: 1em;
+	margin-bottom: 12px;
+	width: 100%;
+	box-sizing: border-box;
+	background: #181a1b;
+	color: #f3f6fa;
+	transition: border-color 0.2s;
+}
+input[type="text"]:focus, input[type="search"]:focus {
+	border-color: #38b6ff;
+	outline: none;
+}
+
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+	color: #22223b;
+	font-size: 1.4em;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+
+.container {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+	padding: 18px 14px;
+	margin-bottom: 18px;
+}
+
+ul {
+	max-height: 150px;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+li {
+	background: #e9ecef;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 1em;
+	transition: background 0.2s;
+}
+
+li:hover {
+	background: #d1d8e0;
+}
+
+button, input[type="button"] {
+	background: linear-gradient(90deg, #4f8cff 0%, #38b6ff 100%);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 8px 16px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover, input[type="button"]:hover {
+	background: linear-gradient(90deg, #38b6ff 0%, #4f8cff 100%);
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+}
+
+input[type="text"], input[type="search"] {
+	border: 1px solid #d1d8e0;
+	border-radius: 8px;
+	padding: 8px 12px;
+	font-size: 1em;
+	margin-bottom: 12px;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+	transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, input[type="search"]:focus {
+	border-color: #4f8cff;
+	outline: none;
+}
+
+h2{
+color:#2c3e50;
+}
+
+ul{
+max-height:150px;
+overflow:auto;
+}

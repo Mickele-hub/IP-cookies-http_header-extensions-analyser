@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "IP & Cookie Analyzer",
+  "version": "1.0",
+  "description": "Affiche l'IP du site et analyse les cookies",
+  
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "scripting",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

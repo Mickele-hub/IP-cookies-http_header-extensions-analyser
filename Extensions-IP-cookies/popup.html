@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.fade-in { animation: fadeIn 0.8s ease; }
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container fade-in">
+		<h2>Analyse du site</h2>
+		<div class="section">
+			<div class="label">IP</div>
+			<div class="value" id="ip">Chargement...</div>
+		</div>
+		<div class="section">
+			<div class="label">Cookies</div>
+			<ul class="list" id="cookies"></ul>
+		</div>
+		<div class="section">
+			<div class="label">En-têtes de sécurité</div>
+			<ul class="list" id="security-headers"></ul>
+		</div>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>
